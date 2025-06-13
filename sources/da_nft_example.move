@@ -184,7 +184,7 @@ module CAFE::da_nft_example_1 {
         // Initialize mint tracker if it doesn't exist
         if (!exists<MintTracker>(creator_addr)) {
             move_to(creator, MintTracker { minted_addresses: vector::empty() });
-        }; // Focus  Dharana
+        }; 
     }
 
     // Mint an NFT with a check for one-per-wallet
