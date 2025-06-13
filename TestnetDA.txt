@@ -1,0 +1,216 @@
+supra move tool init --name supraDAFinal
+
+supra profile new ggg1 --rpc-url https://rpc-testnet.supra.com
+
+	(*) ggg1
+CliProfile { account_address: "0xaf3844fe29ac489a9ace1baa94fb7ba1a05b361a4b43bfb489c1a30e3d01f080", ed25519_public_key: dee89c405204757686a745479fcb805301b5fa0c5d9ccdeeeb8a5a370845d412, 
+rpc_url: "https://rpc-testnet.supra.com/", faucet_url: "http://localhost:2700
+
+ggg2
+CliProfile { account_address: "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904",
+
+ ggg3
+CliProfile { account_address: "0x34d1bd2157d5eb6aa0777afd23ee52facd0bf1154cfadc61899754f64f2965cc"
+
+ggg4
+CliProfile { account_address: "0x39f57fed8a8fa51841e8349e15bb8bd314cb42fb33cfb505d107dc361aefbc71"
+
+ccc1
+CliProfile { account_address: "0x64ced3636e5d88d530e0cb62e23af7c853378c4d1959e3ce9f119d502f74aec2",
+
+
+supra move account fund-with-faucet --url https://rpc-testnet.supra.com
+
+
+
+
+supra move tool publish  --url https://rpc-testnet.supra.com --profile ggg1
+
+account: af3844fe29ac489a9ace1baa94fb7ba1a05b361a4b43bfb489c1a30e3d01f080
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/submit
+Chain_id = 6
+Sequence Number = 0
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/b26f94bcd2ccaa46e4d8396d74f3b552bae4183f7944e734b0775defa45ca131
+
+
+***********************************************************************************************************************************************************************
+***********************************************************************************************************************************************************************
+
+
+//// Initialize collection 
+
+supra move tool run --function-id af3844fe29ac489a9ace1baa94fb7ba1a05b361a4b43bfb489c1a30e3d01f080::da_nft_example::initialize_collection --profile ggg1
+
+account: af3844fe29ac489a9ace1baa94fb7ba1a05b361a4b43bfb489c1a30e3d01f080
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/submit
+Chain_id = 6
+Sequence Number = 1
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/246c84937480187c544a8efc7f0512228129348da6c53b1d7aa6a5887dab9fd7
+
+
+***********************************************************************************************************************************************************************
+***********************************************************************************************************************************************************************
+
+
+//// Minting nft by ggg1 and sending to ggg2
+supra move tool run --function-id af3844fe29ac489a9ace1baa94fb7ba1a05b361a4b43bfb489c1a30e3d01f080::da_nft_example::mint_nft  --args address:0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904 string:"DESCRIPTION_NFT_1" string:"NAME_NFT_1" string:"https://example.com/nft.png"  --profile ggg1
+
+account: af3844fe29ac489a9ace1baa94fb7ba1a05b361a4b43bfb489c1a30e3d01f080
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/submit
+Chain_id = 6
+Sequence Number = 2
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/36b3090c6f070c56bbda7e3969e401c80a478d8e17ba376e3fff3d86da888774
+
+token minted: 0x17fd5dc40c31e25c73eb8bf1f9b5951b66ab7c95239a72f6995512ded8fae9cd
+collection : 0x8c20830cb3738f29c35dac67eeb6ce8187eae19dce0dc2d45cfa32df79b4205a
+
+
+***********************************************************************************************************************************************************************
+***********************************************************************************************************************************************************************
+
+
+
+//// Transfering minted nft from ggg2 to ggg3
+supra move tool run --function-id af3844fe29ac489a9ace1baa94fb7ba1a05b361a4b43bfb489c1a30e3d01f080::da_nft_example::transfer_nft --args address:0x17fd5dc40c31e25c73eb8bf1f9b5951b66ab7c95239a72f6995512ded8fae9cd address:0x34d1bd2157d5eb6aa0777afd23ee52facd0bf1154cfadc61899754f64f2965cc address:0x8c20830cb3738f29c35dac67eeb6ce8187eae19dce0dc2d45cfa32df79b4205a --profile ggg2
+
+account: ca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/submit
+Chain_id = 6
+Sequence Number = 0
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/4b6ae8591c52d43bd76bdd1071f6163049fc00be83758cf76deae6376514172f
+
+
+
+***********************************************************************************************************************************************************************
+***********************************************************************************************************************************************************************
+
+
+
+//// Mutate nft by changing description by ggg3
+
+supra move tool run --function-id af3844fe29ac489a9ace1baa94fb7ba1a05b361a4b43bfb489c1a30e3d01f080::da_nft_example::mutate_nft_description --args address:0x17fd5dc40c31e25c73eb8bf1f9b5951b66ab7c95239a72f6995512ded8fae9cd address:0x8c20830cb3738f29c35dac67eeb6ce8187eae19dce0dc2d45cfa32df79b4205a string:"Mutated description!" --profile ggg3
+
+account: 34d1bd2157d5eb6aa0777afd23ee52facd0bf1154cfadc61899754f64f2965cc
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/submit
+Chain_id = 6
+Sequence Number = 0
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/14b4d61848a394f14e21ac2c70426c83a4ab72a1e5e72ff27de96fb591581d92
+
+
+
+***********************************************************************************************************************************************************************
+***********************************************************************************************************************************************************************
+
+
+//// Burn nft by ggg3
+
+supra move tool run --function-id af3844fe29ac489a9ace1baa94fb7ba1a05b361a4b43bfb489c1a30e3d01f080::da_nft_example::burn_nft --args address:0x17fd5dc40c31e25c73eb8bf1f9b5951b66ab7c95239a72f6995512ded8fae9cd address:0x8c20830cb3738f29c35dac67eeb6ce8187eae19dce0dc2d45cfa32df79b4205a --profile ggg3
+
+account: 34d1bd2157d5eb6aa0777afd23ee52facd0bf1154cfadc61899754f64f2965cc
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/submit
+Chain_id = 6
+Sequence Number = 1
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/b3444e8fbf8fbc6ff0b8f13020d3fffd797fc3297f733006ee3596938e04067c
+
+
+***********************************************************************************************************************************************************************
+***********************************************************************************************************************************************************************
+
+
+
+//// Now mint 2 new nft (step 1 & 2) && step 3: transfer one nft to another nft {TESTS NFT into NFT}
+// step 1 : mint nft by ggg1 and send to ggg2
+supra move tool run --function-id af3844fe29ac489a9ace1baa94fb7ba1a05b361a4b43bfb489c1a30e3d01f080::da_nft_example::mint_nft  --args address:0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904 string:"DESCRIPTION_NFT_2" string:"NAME_NFT_2" string:"https://example.com/nft.png"  --profile ggg1
+
+account: af3844fe29ac489a9ace1baa94fb7ba1a05b361a4b43bfb489c1a30e3d01f080
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/submit
+Chain_id = 6
+Sequence Number = 3
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/2dba37c7ddbaa5e48b02dcb31b18598981bc2f414136778341bd5377e19a9e19
+
+token minted A : 0x6e93ec695a7ea679e6a62eb32a2d4878891401277d4afe6fbfc63f6500bafce6
+collection: 0x8c20830cb3738f29c35dac67eeb6ce8187eae19dce0dc2d45cfa32df79b4205a
+
+// Step 2 minting 2nd NFT mint nft by ggg1 and send to ggg1
+ supra move tool run --function-id af3844fe29ac489a9ace1baa94fb7ba1a05b361a4b43bfb489c1a30e3d01f080::da_nft_example::mint_nft  --args address:0xaf3844fe29ac489a9ace1baa94fb7ba1a05b361a4b43bfb489c1a30e3d01f080 string:"DESCRIPTION_NFT_3" string:"NAME_NFT_3" string:"https://example.com/nft.png"  --profile ggg1
+
+account: af3844fe29ac489a9ace1baa94fb7ba1a05b361a4b43bfb489c1a30e3d01f080
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/submit
+Chain_id = 6
+Sequence Number = 4
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/18a92d526d0ecb0ed1e2e4a66c6158dc649464e5096a520bc345629c5097ae5f
+
+
+token minted B : 0x10cb209bcfcac6e20eace60b195951dc63f92f230ed5845ffd25460b669969ea
+collection: 0x8c20830cb3738f29c35dac67eeb6ce8187eae19dce0dc2d45cfa32df79b4205a
+
+
+// Step3 : transfer one nft {B} to another nft {A}
+supra move tool run --function-id af3844fe29ac489a9ace1baa94fb7ba1a05b361a4b43bfb489c1a30e3d01f080::da_nft_example::transfer_nft_to_nft --args address:0x10cb209bcfcac6e20eace60b195951dc63f92f230ed5845ffd25460b669969ea address:0x8c20830cb3738f29c35dac67eeb6ce8187eae19dce0dc2d45cfa32df79b4205a address:0x6e93ec695a7ea679e6a62eb32a2d4878891401277d4afe6fbfc63f6500bafce6  --profile ggg1
+
+account: af3844fe29ac489a9ace1baa94fb7ba1a05b361a4b43bfb489c1a30e3d01f080
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/submit
+Chain_id = 6
+Sequence Number = 5
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/01f1c5b58505de30b002e0426f23cfa17a249f2623a82dc19b25ded35e66c0f6
+
+
+
+
+
+***********************************************************************************************************************************************************************
+***********************************************************************************************************************************************************************
+
+
+
+// Sending NFT to collection of other user {UNCONVENTIONAL - NO MEANING}
+//// Mint another nft to ggg1 and send it to collection of another user (ggg3)
+supra move tool run --function-id af3844fe29ac489a9ace1baa94fb7ba1a05b361a4b43bfb489c1a30e3d01f080::da_nft_example::mint_nft  --args address:0xaf3844fe29ac489a9ace1baa94fb7ba1a05b361a4b43bfb489c1a30e3d01f080 string:"DESCRIPTION_NFT_4" string:"NAME_NFT_4" string:"https://example.com/nft.png"  --profile ggg1
+
+account: af3844fe29ac489a9ace1baa94fb7ba1a05b361a4b43bfb489c1a30e3d01f080
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/submit
+Chain_id = 6
+Sequence Number = 6
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/1f2ab70f581648422f95ba189a65598d1eb43f76c1c3c0b62adf0e7eec9cd3c4
+
+token minted {C}: 0x9a4553c87686fb05d5d764d9abc4445fbf20f1f36ff785eb5a07f7d1dd442cc1
+collection: 0x8c20830cb3738f29c35dac67eeb6ce8187eae19dce0dc2d45cfa32df79b4205a
+
+
+//now initialize_collection for another user (ggg3)
+supra move tool run --function-id af3844fe29ac489a9ace1baa94fb7ba1a05b361a4b43bfb489c1a30e3d01f080::da_nft_example::initialize_collection --profile ggg3
+
+account: 34d1bd2157d5eb6aa0777afd23ee52facd0bf1154cfadc61899754f64f2965cc
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/submit
+Chain_id = 6
+Sequence Number = 2
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/29d4c309cb9374b5d4c178ac91e8711cf09c25b9d0a4b05cc1a713abeafb90d5
+
+
+/// Minting a sample token for user ggg3 {DOING THIS JUST TO KNOW COLLECTION, TOKEN HAS NO USE}
+supra move tool run --function-id af3844fe29ac489a9ace1baa94fb7ba1a05b361a4b43bfb489c1a30e3d01f080::da_nft_example::mint_nft  --args address:0x34d1bd2157d5eb6aa0777afd23ee52facd0bf1154cfadc61899754f64f2965cc string:"DESCRIPTION_NFT_5" string:"NAME_NFT_5" string:"https://example.com/nft.png"  --profile ggg3
+
+account: 34d1bd2157d5eb6aa0777afd23ee52facd0bf1154cfadc61899754f64f2965cc
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/submit
+Chain_id = 6
+Sequence Number = 3
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/e1457a729afb1df389929e9f5d17f13331698bd9d4014ce7112ed7a9976751b4
+
+collection {B} of ggg3: 0x9d243d75fd201f70b6875c404cb05a46dc68952edd033f194c5d91b06686ad0b
+token: 0x375e08ec419216e67367e0fb0abd8d6bad6eebde683fa268750206aa2d3cbb61
+
+
+/// Now send token {C} to collection {B} of zzz3
+
+supra move tool run --function-id af3844fe29ac489a9ace1baa94fb7ba1a05b361a4b43bfb489c1a30e3d01f080::da_nft_example::transfer_nft_to_collection --args address:0x9a4553c87686fb05d5d764d9abc4445fbf20f1f36ff785eb5a07f7d1dd442cc1 address:0x8c20830cb3738f29c35dac67eeb6ce8187eae19dce0dc2d45cfa32df79b4205a address:0x9d243d75fd201f70b6875c404cb05a46dc68952edd033f194c5d91b06686ad0b --profile ggg1
+
+account: af3844fe29ac489a9ace1baa94fb7ba1a05b361a4b43bfb489c1a30e3d01f080
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/submit
+Chain_id = 6
+Sequence Number = 7
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/c01f7b472678df7837d98c0e35c929f2fd0dc3fc83fd75e9a67493f813a68683
+
+
+
+***********************************************************************************************************************************************************************
+***********************************************************************************************************************************************************************

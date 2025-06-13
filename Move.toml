@@ -1,0 +1,18 @@
+[package]
+name = "supraDAFinal"
+version = "1.0.0"
+authors = []
+
+[addresses]
+CAFE = "0xaf3844fe29ac489a9ace1baa94fb7ba1a05b361a4b43bfb489c1a30e3d01f080"
+aptos_token = "0x3"
+
+[dev-addresses]
+
+
+[dependencies.AptosTokenObjects]
+git = "https://github.com/Entropy-Foundation/aptos-core.git"
+rev = "dev"
+subdir = "aptos-move/framework/aptos-token-objects"
+
+[dev-dependencies]
