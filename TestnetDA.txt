@@ -214,3 +214,51 @@ URL: https://rpc-testnet.supra.com/rpc/v1/transactions/c01f7b472678df7837d98c0e3
 
 ***********************************************************************************************************************************************************************
 ***********************************************************************************************************************************************************************
+
+
+
+
+
+
+
+FOR CRYSTARA.. MINT TOKEN INTO MY TESTNET address
+supra move tool run --function-id af3844fe29ac489a9ace1baa94fb7ba1a05b361a4b43bfb489c1a30e3d01f080::da_nft_example::mint_nft  --args address:0x517e50bec6c06469ccaeefaf5e63b12c2057a5ed9d3ba23fd4c328601865da04 string:"PENGUIN Hem NFT" string:"Description of PENGUIN NFT" string:"https://media.istockphoto.com/id/511366776/photo/gentoo-penguin-waddling-along-on-a-white-sand-beach.jpg?s=612x612&w=0&k=20&c=753zCUifyyfnE6tJCouL6xj52SPYctSnu0a2791ADEo="  --profile ggg1
+supra move tool run --function-id af3844fe29ac489a9ace1baa94fb7ba1a05b361a4b43bfb489c1a30e3d01f080::da_nft_example::mint_nft  --args address:0x517e50bec6c06469ccaeefaf5e63b12c2057a5ed9d3ba23fd4c328601865da04 string:"Ostrich Hem NFT" string:"Description of Ostrich NFT" string:"https://i.guim.co.uk/img/media/eba33114d001141b3dc799dbd3468cad0be86c5c/0_0_6650_4433/master/6650.jpg?width=620&dpr=1&s=none&crop=none"  --profile ggg1
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/c8ad568fee537cb40774c7a44392fce903d5c04927d074b6221c0cc625077564
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/b255d18022cde8960a8fe14d058eaf46831201df497a6a86db9e9e8bf9704205
+
+
+after adding dynamic collection name, description and royalty...
+
+published with ggg2 account  0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904
+
+supra move tool run --function-id ca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904::da_nft_example_1::initialize_collection --args string:"Birds Collection Description" string:"Birds Collection Name" string:"https://static.vecteezy.com/system/resources/thumbnails/057/787/056/small/colorful-birds-singing-on-branches-in-a-blooming-spring-setting-photo.jpeg" --profile ggg2
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/befdae52a74026cf63c84eca665abfe1aa7d9d9c93f3525ecdf967daa7802ba8
+
+supra move tool run --function-id ca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904::da_nft_example_1::mint_nft  --args address:0x517e50bec6c06469ccaeefaf5e63b12c2057a5ed9d3ba23fd4c328601865da04 string:"Birds Collection Name" string:"Penguin NFT" string:"Penguin NFT Description" string:"https://cdn.britannica.com/77/81277-050-2A6A35B2/Adelie-penguin.jpg"  --profile ggg2
+account: ca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/069b72dcf2e0519583b27a2ef0e20c9606d168e061fdd63f23b76e9b91f57223
+
+
+supra move tool run --function-id ca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904::da_nft_example_1::mint_nft  --args address:0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810 string:"Birds Collection Name" string:"Penguin NFT" string:"Penguin NFT Description" string:"https://cdn.britannica.com/77/81277-050-2A6A35B2/Adelie-penguin.jpg"  --profile ggg2
+account: ca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/32f033c79d041f3f7b7fbf6f4af63f35d797823b947f1a5e62a11676f8c16fa5
+
+
+supra move tool run --function-id ca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904::da_nft_example_1::mint_nft  --args address:0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810 string:"Birds Collection Name" string:"Parrot NFT" string:"Parrot NFT Description" string:"https://cdn.britannica.com/35/3635-050-96241EC1/Scarlet-macaw-ara-macao.jpg"  --profile ggg2
+https://rpc-testnet.supra.com/rpc/v1/transactions/1ae6c595753b0db95ef9d42f652448ada09447b146b5035affd033071a229e48
+
+
+supra move tool run --function-id ca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904::da_nft_example_1::mint_nft  --args address:0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810 string:"Birds Collection Name" string:"Pigeon NFT" string:"Pigeon NFT Description" string:"https://cdn.britannica.com/59/124659-050-E4F8E264/Nicobar-pigeon.jpg?w=300"  --profile ggg2
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/74fbb2e95709a87b1de043567bde57db56b42e9d6233397e73414cf1431b9f3b
+
+
+
+supra move tool run --function-id ca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904::da_nft_example_1::mint_nft  --args address:0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810 string:"Birds Collection Name" string:"HummingBird NFT" string:"HummingBird NFT Description" string:"https://cdn.britannica.com/18/5618-050-D65018B2/nectar-hummingbird-Costa-Pollen-ocotillo-flowers-corolla.jpg"  --profile ggg2
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/a2b58c45910aa03badd83c319c17d339efe5d5f154a12dbeb2c43c63c302e416
+
+
+supra move tool run --function-id ca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904::da_nft_example_1::mint_nft  --args address:0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810 string:"Birds Collection Name" string:"Durnak NFT" string:"Durnak NFT Description" string:"https://cdn.crystara.trade/collections/0x80727ca6853c8dcb7fda78e7e4e5ca73cd3c34864944e841ea6ee935f5c85042-The%20Rings%20of%20Eldoria/durnak/image.jpg"  --profile ggg2
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/b1b593bd00480eb76af2456ea1fae171bfd99e4978ceaf020b0af8c916c1de5a
+
+

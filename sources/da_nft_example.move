@@ -1,4 +1,4 @@
-module CAFE::da_nft_example {
+module CAFE::da_nft_example_1 {
     use std::error;
     use std::signer;
     use std::string::{Self, String};
@@ -8,6 +8,7 @@ module CAFE::da_nft_example {
     use supra_framework::account;
     use supra_framework::timestamp;
     use 0x4::collection;
+    use 0x4::royalty;
     use 0x4::token::{Self, Token};
     use 0x1::object::{Self, Object};
     use aptos_token_objects::token::{BurnRef, MutatorRef};
@@ -148,17 +149,23 @@ module CAFE::da_nft_example {
     }
  
     // Initialize the collection and necessary resources
-    public entry fun initialize_collection(creator: &signer) {
+    public entry fun initialize_collection(creator: &signer, collection_description: String, collection_name: String, uri: String) {
         let creator_addr = signer::address_of(creator);
+
+       let royalty =  royalty::create(
+            500, // 5% royalty
+            10000, // 100% denominator
+            creator_addr // Payee is the creator
+        );
 
         // Create an unlimited collection
         let collection_constructor_ref =
             collection::create_unlimited_collection(
                 creator,
-                string::utf8(b"My NFT Collection Description"),
-                string::utf8(b"My NFT Collection"),
-                option::none(),
-                string::utf8(b"https://mycollection.com")
+                collection_description,
+                collection_name,
+                option::some(royalty),
+                uri
             );
 
         // Create collection signer and add metadata
@@ -184,6 +191,7 @@ module CAFE::da_nft_example {
     public entry fun mint_nft(
         creator: &signer,
         receiver: address,
+        collection_name: String,
         name: String,
         description: String,
         uri: String
@@ -197,14 +205,20 @@ module CAFE::da_nft_example {
         //     error::already_exists(E_ALREADY_MINTED)
         // );
 
+         let royalty =  royalty::create(
+            800, // 8% royalty
+            10000, // 100% denominator
+            creator_addr // Payee is the creator
+        );
+
         // Mint the NFT
         let token_constructor_ref =
             token::create(
                 creator,
-                string::utf8(b"My NFT Collection"),
-                name,
+                collection_name,
                 description,
-                option::none(),
+                name,
+                option::some(royalty),
                 uri
             );
 
@@ -227,7 +241,7 @@ module CAFE::da_nft_example {
         // Emit mint event
         let collection_addr =
             collection::create_collection_address(
-                &creator_addr, &string::utf8(b"My NFT Collection")
+                &creator_addr, &collection_name
             );
         // let collection_signer = object::generate_signer_for_object(&collection_addr);
         let metadata = borrow_global_mut<CollectionMetadata>(collection_addr);

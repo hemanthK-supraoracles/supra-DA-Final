@@ -4,7 +4,7 @@ version = "1.0.0"
 authors = []
 
 [addresses]
-CAFE = "0xaf3844fe29ac489a9ace1baa94fb7ba1a05b361a4b43bfb489c1a30e3d01f080"
+CAFE = "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904"
 aptos_token = "0x3"
 
 [dev-addresses]
