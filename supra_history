@@ -3579,3 +3579,396 @@ Output:
 }
 
 
+Local: (2025-06-17 14:56:29.754621508 +05:30)	 Utc: (2025-06-17 09:26:29.754718039 UTC)
+
+CMD:
+Run
+Output:
+{
+  "authenticator": {
+    "Move": {
+      "Ed25519": {
+        "public_key": "0xc862c86cfee01501e3b445bce2123d0c16c14687f199594bf4908a163937cd1f",
+        "signature": "0xeb86a77905dc6114cc082005cbac86cba1c5256c55fbb2b28b48e33e2b4dbd1b878fc915342473a1e885b0317414d1dae6d5ccba7a8d0db4589334a069195409"
+      }
+    }
+  },
+  "block_header": {
+    "hash": "0x544dc344baf56e44847b06ff6f01093bcf63c3b27df7dbc5d5b350e3c0bffbb6",
+    "height": 18762943,
+    "timestamp": {
+      "microseconds_since_unix_epoch": 1750152387146412,
+      "utc_date_time": "2025-06-17T09:26:27.146412+00:00"
+    }
+  },
+  "hash": "0x6c11e5b37f5c82af20936071acb70dd919dc2c20e14014e77077b3320b893cf3",
+  "header": {
+    "chain_id": 6,
+    "expiration_timestamp": {
+      "microseconds_since_unix_epoch": 1750152412000000,
+      "utc_date_time": "2025-06-17T09:26:52+00:00"
+    },
+    "sender": {
+      "Move": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904"
+    },
+    "sequence_number": 15,
+    "gas_unit_price": 100,
+    "max_gas_amount": 500000
+  },
+  "payload": {
+    "Move": {
+      "type": "entry_function_payload",
+      "function": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904::da_nft_example_1::mint_nft",
+      "type_arguments": [],
+      "arguments": [
+        "0xfd566b048d7ea241ebd4d28a3d60a9eaaaa29a718dfff52f2ff4ca8581363b85",
+        "Birds Collection Name",
+        "Peacock NFT",
+        "Peacock NFT Description",
+        "https://cdn.britannica.com/08/3408-050-6065D035/blue-peacock-pavo-cristatus-peahen-Indian-Males-harem-females.jpg"
+      ]
+    }
+  },
+  "output": {
+    "Move": {
+      "gas_used": 1599,
+      "events": [
+        {
+          "guid": {
+            "creation_number": "0",
+            "account_address": "0x0"
+          },
+          "sequence_number": "0",
+          "type": "0x4::collection::Mint",
+          "data": {
+            "collection": "0xef8ee12eb4143ffa73776fef88768b7f36e284e7c768e0c9de19c67f97c4281e",
+            "index": {
+              "value": "8"
+            },
+            "token": "0x240d28cc13cfd733443a4557d82eedfd4d577f57bc072ba473a0a1785447eb89"
+          }
+        },
+        {
+          "guid": {
+            "creation_number": "0",
+            "account_address": "0x0"
+          },
+          "sequence_number": "0",
+          "type": "0x1::object::Transfer",
+          "data": {
+            "from": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904",
+            "object": "0x240d28cc13cfd733443a4557d82eedfd4d577f57bc072ba473a0a1785447eb89",
+            "to": "0xfd566b048d7ea241ebd4d28a3d60a9eaaaa29a718dfff52f2ff4ca8581363b85"
+          }
+        },
+        {
+          "guid": {
+            "creation_number": "1125899906842624",
+            "account_address": "0x240d28cc13cfd733443a4557d82eedfd4d577f57bc072ba473a0a1785447eb89"
+          },
+          "sequence_number": "0",
+          "type": "0x1::object::TransferEvent",
+          "data": {
+            "from": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904",
+            "object": "0x240d28cc13cfd733443a4557d82eedfd4d577f57bc072ba473a0a1785447eb89",
+            "to": "0xfd566b048d7ea241ebd4d28a3d60a9eaaaa29a718dfff52f2ff4ca8581363b85"
+          }
+        },
+        {
+          "guid": {
+            "creation_number": "4",
+            "account_address": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904"
+          },
+          "sequence_number": "7",
+          "type": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904::da_nft_example_1::MintEvent",
+          "data": {
+            "receiver": "0xfd566b048d7ea241ebd4d28a3d60a9eaaaa29a718dfff52f2ff4ca8581363b85",
+            "timestamp": "1750152387",
+            "token_name": "Peacock NFT"
+          }
+        },
+        {
+          "guid": {
+            "creation_number": "0",
+            "account_address": "0x0"
+          },
+          "sequence_number": "0",
+          "type": "0x1::transaction_fee::FeeStatement",
+          "data": {
+            "execution_gas_units": "6",
+            "io_gas_units": "9",
+            "storage_fee_quants": "158520",
+            "storage_fee_refund_quants": "0",
+            "total_charge_gas_units": "1599"
+          }
+        }
+      ],
+      "vm_status": "Executed successfully"
+    }
+  },
+  "status": "Success"
+}
+
+
+Local: (2025-06-17 15:46:20.692491515 +05:30)	 Utc: (2025-06-17 10:16:20.692588613 UTC)
+
+CMD:
+Run
+Output:
+{
+  "authenticator": {
+    "Move": {
+      "Ed25519": {
+        "public_key": "0xc862c86cfee01501e3b445bce2123d0c16c14687f199594bf4908a163937cd1f",
+        "signature": "0x1442e2d59f6955d9923064aa01bbe991674390df4535dd1f5fc52fdfdde7b683da09279816a6e7e0dc18988ebd359847c9845174f71b6b08971059d3b363ac04"
+      }
+    }
+  },
+  "block_header": {
+    "hash": "0x7879ade953423ec6d796c67f051ae3d985345d6f216af00cd77aad320ea7a5d5",
+    "height": 18764838,
+    "timestamp": {
+      "microseconds_since_unix_epoch": 1750155378827747,
+      "utc_date_time": "2025-06-17T10:16:18.827747+00:00"
+    }
+  },
+  "hash": "0xb549d49b5cbba48c0e5737f75d0a332383effd4c06c480112af7b33216e15b96",
+  "header": {
+    "chain_id": 6,
+    "expiration_timestamp": {
+      "microseconds_since_unix_epoch": 1750155408000000,
+      "utc_date_time": "2025-06-17T10:16:48+00:00"
+    },
+    "sender": {
+      "Move": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904"
+    },
+    "sequence_number": 16,
+    "gas_unit_price": 100,
+    "max_gas_amount": 500000
+  },
+  "payload": {
+    "Move": {
+      "type": "entry_function_payload",
+      "function": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904::da_nft_example_1::mint_nft",
+      "type_arguments": [],
+      "arguments": [
+        "0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810",
+        "Birds Collection Name",
+        "Pigeon NFT",
+        "Pigeon NFT Description",
+        "https://cdn.britannica.com/53/117053-050-6B05C512/Rock.jpg"
+      ]
+    }
+  },
+  "output": {
+    "Move": {
+      "gas_used": 1577,
+      "events": [
+        {
+          "guid": {
+            "creation_number": "0",
+            "account_address": "0x0"
+          },
+          "sequence_number": "0",
+          "type": "0x4::collection::Mint",
+          "data": {
+            "collection": "0xef8ee12eb4143ffa73776fef88768b7f36e284e7c768e0c9de19c67f97c4281e",
+            "index": {
+              "value": "9"
+            },
+            "token": "0xf87ccba62f4587b9423b3e8de0eec61693ed3a8f28923ab7bd14c8cc49a52301"
+          }
+        },
+        {
+          "guid": {
+            "creation_number": "0",
+            "account_address": "0x0"
+          },
+          "sequence_number": "0",
+          "type": "0x1::object::Transfer",
+          "data": {
+            "from": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904",
+            "object": "0xf87ccba62f4587b9423b3e8de0eec61693ed3a8f28923ab7bd14c8cc49a52301",
+            "to": "0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810"
+          }
+        },
+        {
+          "guid": {
+            "creation_number": "1125899906842624",
+            "account_address": "0xf87ccba62f4587b9423b3e8de0eec61693ed3a8f28923ab7bd14c8cc49a52301"
+          },
+          "sequence_number": "0",
+          "type": "0x1::object::TransferEvent",
+          "data": {
+            "from": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904",
+            "object": "0xf87ccba62f4587b9423b3e8de0eec61693ed3a8f28923ab7bd14c8cc49a52301",
+            "to": "0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810"
+          }
+        },
+        {
+          "guid": {
+            "creation_number": "4",
+            "account_address": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904"
+          },
+          "sequence_number": "8",
+          "type": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904::da_nft_example_1::MintEvent",
+          "data": {
+            "receiver": "0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810",
+            "timestamp": "1750155378",
+            "token_name": "Pigeon NFT"
+          }
+        },
+        {
+          "guid": {
+            "creation_number": "0",
+            "account_address": "0x0"
+          },
+          "sequence_number": "0",
+          "type": "0x1::transaction_fee::FeeStatement",
+          "data": {
+            "execution_gas_units": "6",
+            "io_gas_units": "9",
+            "storage_fee_quants": "156280",
+            "storage_fee_refund_quants": "0",
+            "total_charge_gas_units": "1577"
+          }
+        }
+      ],
+      "vm_status": "Executed successfully"
+    }
+  },
+  "status": "Success"
+}
+
+
+Local: (2025-06-17 15:58:10.093217741 +05:30)	 Utc: (2025-06-17 10:28:10.093327084 UTC)
+
+CMD:
+Run
+Output:
+{
+  "authenticator": {
+    "Move": {
+      "Ed25519": {
+        "public_key": "0xc862c86cfee01501e3b445bce2123d0c16c14687f199594bf4908a163937cd1f",
+        "signature": "0x04cb5727e16efbf9ac07342caa2eed508f0ed44fb6bfa3d28b7ec4712144c172dea00d87067d15d7d2e945a8da7511763ee8730cba6b56d7ef91116a6ad1600b"
+      }
+    }
+  },
+  "block_header": {
+    "hash": "0x5b08175ae10eb5ae49bf6abbf6e52c22b7acdab482083ed0239d4b251117c64f",
+    "height": 18765313,
+    "timestamp": {
+      "microseconds_since_unix_epoch": 1750156087982478,
+      "utc_date_time": "2025-06-17T10:28:07.982478+00:00"
+    }
+  },
+  "hash": "0x85fc193e91c7d0d51fa9ad17c4f9d5876403c7082a24eb2ace5ee51e7cc70b2c",
+  "header": {
+    "chain_id": 6,
+    "expiration_timestamp": {
+      "microseconds_since_unix_epoch": 1750156117000000,
+      "utc_date_time": "2025-06-17T10:28:37+00:00"
+    },
+    "sender": {
+      "Move": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904"
+    },
+    "sequence_number": 17,
+    "gas_unit_price": 100,
+    "max_gas_amount": 500000
+  },
+  "payload": {
+    "Move": {
+      "type": "entry_function_payload",
+      "function": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904::da_nft_example_1::mint_nft",
+      "type_arguments": [],
+      "arguments": [
+        "0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810",
+        "Birds Collection Name",
+        "Pigeon NFT",
+        "Pigeon NFT Description",
+        "https://cdn.britannica.com/53/117053-050-6B05C512/Rock.jpg"
+      ]
+    }
+  },
+  "output": {
+    "Move": {
+      "gas_used": 1577,
+      "events": [
+        {
+          "guid": {
+            "creation_number": "0",
+            "account_address": "0x0"
+          },
+          "sequence_number": "0",
+          "type": "0x4::collection::Mint",
+          "data": {
+            "collection": "0xef8ee12eb4143ffa73776fef88768b7f36e284e7c768e0c9de19c67f97c4281e",
+            "index": {
+              "value": "10"
+            },
+            "token": "0x32faba0cdb340f4162baecc35aee231defa5f431a1117bf09823f324ac505958"
+          }
+        },
+        {
+          "guid": {
+            "creation_number": "0",
+            "account_address": "0x0"
+          },
+          "sequence_number": "0",
+          "type": "0x1::object::Transfer",
+          "data": {
+            "from": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904",
+            "object": "0x32faba0cdb340f4162baecc35aee231defa5f431a1117bf09823f324ac505958",
+            "to": "0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810"
+          }
+        },
+        {
+          "guid": {
+            "creation_number": "1125899906842624",
+            "account_address": "0x32faba0cdb340f4162baecc35aee231defa5f431a1117bf09823f324ac505958"
+          },
+          "sequence_number": "0",
+          "type": "0x1::object::TransferEvent",
+          "data": {
+            "from": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904",
+            "object": "0x32faba0cdb340f4162baecc35aee231defa5f431a1117bf09823f324ac505958",
+            "to": "0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810"
+          }
+        },
+        {
+          "guid": {
+            "creation_number": "4",
+            "account_address": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904"
+          },
+          "sequence_number": "9",
+          "type": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904::da_nft_example_1::MintEvent",
+          "data": {
+            "receiver": "0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810",
+            "timestamp": "1750156087",
+            "token_name": "Pigeon NFT"
+          }
+        },
+        {
+          "guid": {
+            "creation_number": "0",
+            "account_address": "0x0"
+          },
+          "sequence_number": "0",
+          "type": "0x1::transaction_fee::FeeStatement",
+          "data": {
+            "execution_gas_units": "6",
+            "io_gas_units": "9",
+            "storage_fee_quants": "156280",
+            "storage_fee_refund_quants": "0",
+            "total_charge_gas_units": "1577"
+          }
+        }
+      ],
+      "vm_status": "Executed successfully"
+    }
+  },
+  "status": "Success"
+}
+
+

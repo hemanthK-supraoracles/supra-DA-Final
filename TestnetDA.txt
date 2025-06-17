@@ -253,7 +253,6 @@ supra move tool run --function-id ca1538351b280983182d045df013a4b3895331dbe1eab6
 URL: https://rpc-testnet.supra.com/rpc/v1/transactions/74fbb2e95709a87b1de043567bde57db56b42e9d6233397e73414cf1431b9f3b
 
 
-
 supra move tool run --function-id ca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904::da_nft_example_1::mint_nft  --args address:0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810 string:"Birds Collection Name" string:"HummingBird NFT" string:"HummingBird NFT Description" string:"https://cdn.britannica.com/18/5618-050-D65018B2/nectar-hummingbird-Costa-Pollen-ocotillo-flowers-corolla.jpg"  --profile ggg2
 URL: https://rpc-testnet.supra.com/rpc/v1/transactions/a2b58c45910aa03badd83c319c17d339efe5d5f154a12dbeb2c43c63c302e416
 
@@ -262,3 +261,9 @@ supra move tool run --function-id ca1538351b280983182d045df013a4b3895331dbe1eab6
 URL: https://rpc-testnet.supra.com/rpc/v1/transactions/b1b593bd00480eb76af2456ea1fae171bfd99e4978ceaf020b0af8c916c1de5a
 
 
+supra move tool run --function-id ca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904::da_nft_example_1::mint_nft  --args address:0xfd566b048d7ea241ebd4d28a3d60a9eaaaa29a718dfff52f2ff4ca8581363b85 string:"Birds Collection Name" string:"Peacock NFT" string:"Peacock NFT Description" string:"https://cdn.britannica.com/08/3408-050-6065D035/blue-peacock-pavo-cristatus-peahen-Indian-Males-harem-females.jpg"  --profile ggg2
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/a2b58c45910aa03badd83c319c17d339efe5d5f154a12dbeb2c43c63c302e416
+
+
+supra move tool run --function-id ca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904::da_nft_example_1::mint_nft  --args address:0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810 string:"Birds Collection Name" string:"Pigeon NFT" string:"Pigeon NFT Description" string:"https://cdn.britannica.com/53/117053-050-6B05C512/Rock.jpg"  --profile ggg2
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/85fc193e91c7d0d51fa9ad17c4f9d5876403c7082a24eb2ace5ee51e7cc70b2c
