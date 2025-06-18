@@ -3972,3 +3972,527 @@ Output:
 }
 
 
+Local: (2025-06-17 18:22:05.340152354 +05:30)	 Utc: (2025-06-17 12:52:05.340201995 UTC)
+
+CMD:
+Run
+Output:
+{
+  "authenticator": {
+    "Move": {
+      "Ed25519": {
+        "public_key": "0xc862c86cfee01501e3b445bce2123d0c16c14687f199594bf4908a163937cd1f",
+        "signature": "0xb4956e3b39a9518be72565c37ddc2a21ab55f61a397544eb14b4bf516f0269a7ccd149ce64cd751e6a7bd6e698ef8128661196622ca649b10121481f9c7a530f"
+      }
+    }
+  },
+  "block_header": {
+    "hash": "0x36abc1010da25cc191e4bd7544e1560ad939abab223190f0ffab9d1e4c8cdf2e",
+    "height": 18772768,
+    "timestamp": {
+      "microseconds_since_unix_epoch": 1750164723692101,
+      "utc_date_time": "2025-06-17T12:52:03.692101+00:00"
+    }
+  },
+  "hash": "0xce761f7545d3da5f310809e2d6ac0e78c709ca9680ba89a27e2b77ab0de5a69a",
+  "header": {
+    "chain_id": 6,
+    "expiration_timestamp": {
+      "microseconds_since_unix_epoch": 1750164752000000,
+      "utc_date_time": "2025-06-17T12:52:32+00:00"
+    },
+    "sender": {
+      "Move": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904"
+    },
+    "sequence_number": 18,
+    "gas_unit_price": 100,
+    "max_gas_amount": 500000
+  },
+  "payload": {
+    "Move": {
+      "type": "entry_function_payload",
+      "function": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904::da_nft_example_1::mint_nft",
+      "type_arguments": [],
+      "arguments": [
+        "0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810",
+        "Birds Collection Name",
+        "Falcon NFT",
+        "Falcon NFT Description",
+        "https://cdn.britannica.com/17/201117-050-9E63D196/peregrine-falcon-in-flight.jpg"
+      ]
+    }
+  },
+  "output": {
+    "Move": {
+      "gas_used": 1586,
+      "events": [
+        {
+          "guid": {
+            "creation_number": "0",
+            "account_address": "0x0"
+          },
+          "sequence_number": "0",
+          "type": "0x4::collection::Mint",
+          "data": {
+            "collection": "0xef8ee12eb4143ffa73776fef88768b7f36e284e7c768e0c9de19c67f97c4281e",
+            "index": {
+              "value": "11"
+            },
+            "token": "0x2aa5af216e893e8d8a1613474164abed67b98b28c52274fecd14ccc325f447bc"
+          }
+        },
+        {
+          "guid": {
+            "creation_number": "0",
+            "account_address": "0x0"
+          },
+          "sequence_number": "0",
+          "type": "0x1::object::Transfer",
+          "data": {
+            "from": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904",
+            "object": "0x2aa5af216e893e8d8a1613474164abed67b98b28c52274fecd14ccc325f447bc",
+            "to": "0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810"
+          }
+        },
+        {
+          "guid": {
+            "creation_number": "1125899906842624",
+            "account_address": "0x2aa5af216e893e8d8a1613474164abed67b98b28c52274fecd14ccc325f447bc"
+          },
+          "sequence_number": "0",
+          "type": "0x1::object::TransferEvent",
+          "data": {
+            "from": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904",
+            "object": "0x2aa5af216e893e8d8a1613474164abed67b98b28c52274fecd14ccc325f447bc",
+            "to": "0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810"
+          }
+        },
+        {
+          "guid": {
+            "creation_number": "4",
+            "account_address": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904"
+          },
+          "sequence_number": "10",
+          "type": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904::da_nft_example_1::MintEvent",
+          "data": {
+            "receiver": "0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810",
+            "timestamp": "1750164723",
+            "token_name": "Falcon NFT"
+          }
+        },
+        {
+          "guid": {
+            "creation_number": "0",
+            "account_address": "0x0"
+          },
+          "sequence_number": "0",
+          "type": "0x1::transaction_fee::FeeStatement",
+          "data": {
+            "execution_gas_units": "6",
+            "io_gas_units": "9",
+            "storage_fee_quants": "157160",
+            "storage_fee_refund_quants": "0",
+            "total_charge_gas_units": "1586"
+          }
+        }
+      ],
+      "vm_status": "Executed successfully"
+    }
+  },
+  "status": "Success"
+}
+
+
+Local: (2025-06-18 11:41:42.473586532 +05:30)	 Utc: (2025-06-18 06:11:42.473698327 UTC)
+
+CMD:
+Run
+Output:
+{
+  "authenticator": {
+    "Move": {
+      "Ed25519": {
+        "public_key": "0xc862c86cfee01501e3b445bce2123d0c16c14687f199594bf4908a163937cd1f",
+        "signature": "0x25e1603c61311e7ab7b2205c7a3a0c467decab15585feca7a931afa20095e0a40b5da41fda5fef3536d80f3243f43ab15214d005e845626a1278df019cd0a70b"
+      }
+    }
+  },
+  "block_header": {
+    "hash": "0xbe3cfc391d35484760a1cbd21d4018a39db59d1553cb27b1aacf141c717eaaf7",
+    "height": 18820087,
+    "timestamp": {
+      "microseconds_since_unix_epoch": 1750227099679191,
+      "utc_date_time": "2025-06-18T06:11:39.679191+00:00"
+    }
+  },
+  "hash": "0xdce84ba276eabf6b05d02578e133197e9327ed1e55ccb0d5dd76f10dab5bf911",
+  "header": {
+    "chain_id": 6,
+    "expiration_timestamp": {
+      "microseconds_since_unix_epoch": 1750227128000000,
+      "utc_date_time": "2025-06-18T06:12:08+00:00"
+    },
+    "sender": {
+      "Move": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904"
+    },
+    "sequence_number": 19,
+    "gas_unit_price": 100,
+    "max_gas_amount": 500000
+  },
+  "payload": {
+    "Move": {
+      "type": "entry_function_payload",
+      "function": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904::da_nft_example_1::mint_nft",
+      "type_arguments": [],
+      "arguments": [
+        "0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810",
+        "Birds Collection Name",
+        "Woodpecker NFT",
+        "Woodpecker NFT Description",
+        "https://cdn.britannica.com/45/251245-050-86C44E19/black-woodpecker-bird-dryocopus-martius.jpg"
+      ]
+    }
+  },
+  "output": {
+    "Move": {
+      "gas_used": 1592,
+      "events": [
+        {
+          "guid": {
+            "creation_number": "0",
+            "account_address": "0x0"
+          },
+          "sequence_number": "0",
+          "type": "0x4::collection::Mint",
+          "data": {
+            "collection": "0xef8ee12eb4143ffa73776fef88768b7f36e284e7c768e0c9de19c67f97c4281e",
+            "index": {
+              "value": "12"
+            },
+            "token": "0x3afdb3ef08f2a7bbd27b38554e6dce94163c5a1524684a024f3475d213452ef4"
+          }
+        },
+        {
+          "guid": {
+            "creation_number": "0",
+            "account_address": "0x0"
+          },
+          "sequence_number": "0",
+          "type": "0x1::object::Transfer",
+          "data": {
+            "from": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904",
+            "object": "0x3afdb3ef08f2a7bbd27b38554e6dce94163c5a1524684a024f3475d213452ef4",
+            "to": "0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810"
+          }
+        },
+        {
+          "guid": {
+            "creation_number": "1125899906842624",
+            "account_address": "0x3afdb3ef08f2a7bbd27b38554e6dce94163c5a1524684a024f3475d213452ef4"
+          },
+          "sequence_number": "0",
+          "type": "0x1::object::TransferEvent",
+          "data": {
+            "from": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904",
+            "object": "0x3afdb3ef08f2a7bbd27b38554e6dce94163c5a1524684a024f3475d213452ef4",
+            "to": "0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810"
+          }
+        },
+        {
+          "guid": {
+            "creation_number": "4",
+            "account_address": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904"
+          },
+          "sequence_number": "11",
+          "type": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904::da_nft_example_1::MintEvent",
+          "data": {
+            "receiver": "0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810",
+            "timestamp": "1750227099",
+            "token_name": "Woodpecker NFT"
+          }
+        },
+        {
+          "guid": {
+            "creation_number": "0",
+            "account_address": "0x0"
+          },
+          "sequence_number": "0",
+          "type": "0x1::transaction_fee::FeeStatement",
+          "data": {
+            "execution_gas_units": "6",
+            "io_gas_units": "9",
+            "storage_fee_quants": "157840",
+            "storage_fee_refund_quants": "0",
+            "total_charge_gas_units": "1592"
+          }
+        }
+      ],
+      "vm_status": "Executed successfully"
+    }
+  },
+  "status": "Success"
+}
+
+
+Local: (2025-06-18 11:43:54.508443767 +05:30)	 Utc: (2025-06-18 06:13:54.508557369 UTC)
+
+CMD:
+Run
+Output:
+{
+  "authenticator": {
+    "Move": {
+      "Ed25519": {
+        "public_key": "0xc862c86cfee01501e3b445bce2123d0c16c14687f199594bf4908a163937cd1f",
+        "signature": "0x97ad46d256ab07fff8a3ec15a1a78e362827d156ffed96151565e397d0813bfd8025219566004e2adf8bcd74af46640c25bc0bf6bf67ee1c4a78cb8488fae203"
+      }
+    }
+  },
+  "block_header": {
+    "hash": "0x83f741651a6c08f7e719cacd8c01dd475e7c94123b33832efc0041c40ccf6d60",
+    "height": 18820159,
+    "timestamp": {
+      "microseconds_since_unix_epoch": 1750227233012700,
+      "utc_date_time": "2025-06-18T06:13:53.012700+00:00"
+    }
+  },
+  "hash": "0x2b4f4c9b58c4c0d0cd02a1ac1729fa531d38313a32b37cf5b16ae5f16a1b0dfe",
+  "header": {
+    "chain_id": 6,
+    "expiration_timestamp": {
+      "microseconds_since_unix_epoch": 1750227261000000,
+      "utc_date_time": "2025-06-18T06:14:21+00:00"
+    },
+    "sender": {
+      "Move": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904"
+    },
+    "sequence_number": 20,
+    "gas_unit_price": 100,
+    "max_gas_amount": 500000
+  },
+  "payload": {
+    "Move": {
+      "type": "entry_function_payload",
+      "function": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904::da_nft_example_1::mint_nft",
+      "type_arguments": [],
+      "arguments": [
+        "0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810",
+        "Birds Collection Name",
+        "Shoebill NFT",
+        "Shoebill NFT Description",
+        "https://cdn.britannica.com/70/121270-131-6CD7EF45/Shoebill.jpg"
+      ]
+    }
+  },
+  "output": {
+    "Move": {
+      "gas_used": 1579,
+      "events": [
+        {
+          "guid": {
+            "creation_number": "0",
+            "account_address": "0x0"
+          },
+          "sequence_number": "0",
+          "type": "0x4::collection::Mint",
+          "data": {
+            "collection": "0xef8ee12eb4143ffa73776fef88768b7f36e284e7c768e0c9de19c67f97c4281e",
+            "index": {
+              "value": "13"
+            },
+            "token": "0x459a5990b26da9ec8e0c3e4063b0d58b3983c7960321ce79d1b5cff26f4f101e"
+          }
+        },
+        {
+          "guid": {
+            "creation_number": "0",
+            "account_address": "0x0"
+          },
+          "sequence_number": "0",
+          "type": "0x1::object::Transfer",
+          "data": {
+            "from": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904",
+            "object": "0x459a5990b26da9ec8e0c3e4063b0d58b3983c7960321ce79d1b5cff26f4f101e",
+            "to": "0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810"
+          }
+        },
+        {
+          "guid": {
+            "creation_number": "1125899906842624",
+            "account_address": "0x459a5990b26da9ec8e0c3e4063b0d58b3983c7960321ce79d1b5cff26f4f101e"
+          },
+          "sequence_number": "0",
+          "type": "0x1::object::TransferEvent",
+          "data": {
+            "from": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904",
+            "object": "0x459a5990b26da9ec8e0c3e4063b0d58b3983c7960321ce79d1b5cff26f4f101e",
+            "to": "0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810"
+          }
+        },
+        {
+          "guid": {
+            "creation_number": "4",
+            "account_address": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904"
+          },
+          "sequence_number": "12",
+          "type": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904::da_nft_example_1::MintEvent",
+          "data": {
+            "receiver": "0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810",
+            "timestamp": "1750227233",
+            "token_name": "Shoebill NFT"
+          }
+        },
+        {
+          "guid": {
+            "creation_number": "0",
+            "account_address": "0x0"
+          },
+          "sequence_number": "0",
+          "type": "0x1::transaction_fee::FeeStatement",
+          "data": {
+            "execution_gas_units": "6",
+            "io_gas_units": "9",
+            "storage_fee_quants": "156520",
+            "storage_fee_refund_quants": "0",
+            "total_charge_gas_units": "1579"
+          }
+        }
+      ],
+      "vm_status": "Executed successfully"
+    }
+  },
+  "status": "Success"
+}
+
+
+Local: (2025-06-18 11:45:56.396892101 +05:30)	 Utc: (2025-06-18 06:15:56.397003632 UTC)
+
+CMD:
+Run
+Output:
+{
+  "authenticator": {
+    "Move": {
+      "Ed25519": {
+        "public_key": "0xc862c86cfee01501e3b445bce2123d0c16c14687f199594bf4908a163937cd1f",
+        "signature": "0x7d889b77cbfbb6f5deb5b8685224999c402dc9ec5aeb149641e7e8ab9e71b460207fc032058fd98be162ea783014ec16cf63e940ec3dfed10c9827f3aa0a3b08"
+      }
+    }
+  },
+  "block_header": {
+    "hash": "0x8faa3e32ee1a5a5719a05a17266cb9935e4a461dd94504e1c7c50a3da8cc9b0a",
+    "height": 18820236,
+    "timestamp": {
+      "microseconds_since_unix_epoch": 1750227354407173,
+      "utc_date_time": "2025-06-18T06:15:54.407173+00:00"
+    }
+  },
+  "hash": "0xbc4e49d5c9f6f090f1cbf9a545bc41e46dc49ca73b6f8040435845f4afe7472b",
+  "header": {
+    "chain_id": 6,
+    "expiration_timestamp": {
+      "microseconds_since_unix_epoch": 1750227383000000,
+      "utc_date_time": "2025-06-18T06:16:23+00:00"
+    },
+    "sender": {
+      "Move": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904"
+    },
+    "sequence_number": 21,
+    "gas_unit_price": 100,
+    "max_gas_amount": 500000
+  },
+  "payload": {
+    "Move": {
+      "type": "entry_function_payload",
+      "function": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904::da_nft_example_1::mint_nft",
+      "type_arguments": [],
+      "arguments": [
+        "0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810",
+        "Birds Collection Name",
+        "Duck NFT",
+        "Duck NFT Description",
+        "https://cdn.britannica.com/93/7893-004-8C5236AA/pintail.jpg"
+      ]
+    }
+  },
+  "output": {
+    "Move": {
+      "gas_used": 1576,
+      "events": [
+        {
+          "guid": {
+            "creation_number": "0",
+            "account_address": "0x0"
+          },
+          "sequence_number": "0",
+          "type": "0x4::collection::Mint",
+          "data": {
+            "collection": "0xef8ee12eb4143ffa73776fef88768b7f36e284e7c768e0c9de19c67f97c4281e",
+            "index": {
+              "value": "14"
+            },
+            "token": "0x7627bd8d19e296cececc99b6c67eb4b7bfe0e5ac2573b51f379407486d23344c"
+          }
+        },
+        {
+          "guid": {
+            "creation_number": "0",
+            "account_address": "0x0"
+          },
+          "sequence_number": "0",
+          "type": "0x1::object::Transfer",
+          "data": {
+            "from": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904",
+            "object": "0x7627bd8d19e296cececc99b6c67eb4b7bfe0e5ac2573b51f379407486d23344c",
+            "to": "0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810"
+          }
+        },
+        {
+          "guid": {
+            "creation_number": "1125899906842624",
+            "account_address": "0x7627bd8d19e296cececc99b6c67eb4b7bfe0e5ac2573b51f379407486d23344c"
+          },
+          "sequence_number": "0",
+          "type": "0x1::object::TransferEvent",
+          "data": {
+            "from": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904",
+            "object": "0x7627bd8d19e296cececc99b6c67eb4b7bfe0e5ac2573b51f379407486d23344c",
+            "to": "0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810"
+          }
+        },
+        {
+          "guid": {
+            "creation_number": "4",
+            "account_address": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904"
+          },
+          "sequence_number": "13",
+          "type": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904::da_nft_example_1::MintEvent",
+          "data": {
+            "receiver": "0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810",
+            "timestamp": "1750227354",
+            "token_name": "Duck NFT"
+          }
+        },
+        {
+          "guid": {
+            "creation_number": "0",
+            "account_address": "0x0"
+          },
+          "sequence_number": "0",
+          "type": "0x1::transaction_fee::FeeStatement",
+          "data": {
+            "execution_gas_units": "6",
+            "io_gas_units": "9",
+            "storage_fee_quants": "156240",
+            "storage_fee_refund_quants": "0",
+            "total_charge_gas_units": "1576"
+          }
+        }
+      ],
+      "vm_status": "Executed successfully"
+    }
+  },
+  "status": "Success"
+}
+
+

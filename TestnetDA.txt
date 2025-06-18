@@ -260,10 +260,29 @@ URL: https://rpc-testnet.supra.com/rpc/v1/transactions/a2b58c45910aa03badd83c319
 supra move tool run --function-id ca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904::da_nft_example_1::mint_nft  --args address:0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810 string:"Birds Collection Name" string:"Durnak NFT" string:"Durnak NFT Description" string:"https://cdn.crystara.trade/collections/0x80727ca6853c8dcb7fda78e7e4e5ca73cd3c34864944e841ea6ee935f5c85042-The%20Rings%20of%20Eldoria/durnak/image.jpg"  --profile ggg2
 URL: https://rpc-testnet.supra.com/rpc/v1/transactions/b1b593bd00480eb76af2456ea1fae171bfd99e4978ceaf020b0af8c916c1de5a
 
-
+// sent to owner of crystara
 supra move tool run --function-id ca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904::da_nft_example_1::mint_nft  --args address:0xfd566b048d7ea241ebd4d28a3d60a9eaaaa29a718dfff52f2ff4ca8581363b85 string:"Birds Collection Name" string:"Peacock NFT" string:"Peacock NFT Description" string:"https://cdn.britannica.com/08/3408-050-6065D035/blue-peacock-pavo-cristatus-peahen-Indian-Males-harem-females.jpg"  --profile ggg2
 URL: https://rpc-testnet.supra.com/rpc/v1/transactions/a2b58c45910aa03badd83c319c17d339efe5d5f154a12dbeb2c43c63c302e416
 
 
 supra move tool run --function-id ca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904::da_nft_example_1::mint_nft  --args address:0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810 string:"Birds Collection Name" string:"Pigeon NFT" string:"Pigeon NFT Description" string:"https://cdn.britannica.com/53/117053-050-6B05C512/Rock.jpg"  --profile ggg2
 URL: https://rpc-testnet.supra.com/rpc/v1/transactions/85fc193e91c7d0d51fa9ad17c4f9d5876403c7082a24eb2ace5ee51e7cc70b2c
+
+
+
+supra move tool run --function-id ca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904::da_nft_example_1::mint_nft  --args address:0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810 string:"Birds Collection Name" string:"Falcon NFT" string:"Falcon NFT Description" string:"https://cdn.britannica.com/17/201117-050-9E63D196/peregrine-falcon-in-flight.jpg"  --profile ggg2
+
+
+supra move tool run --function-id ca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904::da_nft_example_1::mint_nft  --args address:0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810 string:"Birds Collection Name" string:"Woodpecker NFT" string:"Woodpecker NFT Description" string:"https://cdn.britannica.com/45/251245-050-86C44E19/black-woodpecker-bird-dryocopus-martius.jpg"  --profile ggg2
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/dce84ba276eabf6b05d02578e133197e9327ed1e55ccb0d5dd76f10dab5bf911
+
+
+supra move tool run --function-id ca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904::da_nft_example_1::mint_nft  --args address:0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810 string:"Birds Collection Name" string:"Shoebill NFT" string:"Shoebill NFT Description" string:"https://cdn.britannica.com/70/121270-131-6CD7EF45/Shoebill.jpg"  --profile ggg2
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/2b4f4c9b58c4c0d0cd02a1ac1729fa531d38313a32b37cf5b16ae5f16a1b0dfe
+
+
+supra move tool run --function-id ca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904::da_nft_example_1::mint_nft  --args address:0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810 string:"Birds Collection Name" string:"Duck NFT" string:"Duck NFT Description" string:"https://cdn.britannica.com/93/7893-004-8C5236AA/pintail.jpg"  --profile ggg2
+URL: https://rpc-testnet.supra.com/rpc/v1/transactions/bc4e49d5c9f6f090f1cbf9a545bc41e46dc49ca73b6f8040435845f4afe7472b
+
+
+

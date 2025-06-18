@@ -205,7 +205,7 @@ module CAFE::da_nft_example_1 {
         //     error::already_exists(E_ALREADY_MINTED)
         // );
 
-         let royalty =  royalty::create(
+        let royalty =  royalty::create(
             800, // 8% royalty
             10000, // 100% denominator
             creator_addr // Payee is the creator
