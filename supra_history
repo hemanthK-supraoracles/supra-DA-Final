@@ -4496,3 +4496,134 @@ Output:
 }
 
 
+Local: (2025-06-24 18:31:28.217828277 +05:30)	 Utc: (2025-06-24 13:01:28.217937429 UTC)
+
+CMD:
+Run
+Output:
+{
+  "authenticator": {
+    "Move": {
+      "Ed25519": {
+        "public_key": "0xc862c86cfee01501e3b445bce2123d0c16c14687f199594bf4908a163937cd1f",
+        "signature": "0x152f2ca24619ef832acc18ece0236643dc07aaa3f3381290e65e616e6434a0778896ed1ca960efd0e543798eb2ef0d3eefb3b86c6429b7ec101d6b06bad34305"
+      }
+    }
+  },
+  "block_header": {
+    "hash": "0x3074522b375ae17778f9a2881472bd4ffc7c3f637de566e92ba8565b944a35dc",
+    "height": 19472507,
+    "timestamp": {
+      "microseconds_since_unix_epoch": 1750770086346318,
+      "utc_date_time": "2025-06-24T13:01:26.346318+00:00"
+    }
+  },
+  "hash": "0x6068cb8961ad0e566b14136b196158dddc18e084bf0543ce819808bcb5f2b7c3",
+  "header": {
+    "chain_id": 6,
+    "expiration_timestamp": {
+      "microseconds_since_unix_epoch": 1750770115000000,
+      "utc_date_time": "2025-06-24T13:01:55+00:00"
+    },
+    "sender": {
+      "Move": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904"
+    },
+    "sequence_number": 22,
+    "gas_unit_price": 100,
+    "max_gas_amount": 500000
+  },
+  "payload": {
+    "Move": {
+      "type": "entry_function_payload",
+      "function": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904::da_nft_example_1::mint_nft",
+      "type_arguments": [],
+      "arguments": [
+        "0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810",
+        "Birds Collection Name",
+        "Wood Stork NFT",
+        "Wood Stork NFT Description",
+        "https://cdn.britannica.com/32/152832-050-24DF0338/Wood-stork.jpg"
+      ]
+    }
+  },
+  "output": {
+    "Move": {
+      "gas_used": 1581,
+      "events": [
+        {
+          "guid": {
+            "creation_number": "0",
+            "account_address": "0x0"
+          },
+          "sequence_number": "0",
+          "type": "0x4::collection::Mint",
+          "data": {
+            "collection": "0xef8ee12eb4143ffa73776fef88768b7f36e284e7c768e0c9de19c67f97c4281e",
+            "index": {
+              "value": "15"
+            },
+            "token": "0x862328a36b194daba2b9fcc5960eb9f26653ffeba6bcdd08d4952595232f73a7"
+          }
+        },
+        {
+          "guid": {
+            "creation_number": "0",
+            "account_address": "0x0"
+          },
+          "sequence_number": "0",
+          "type": "0x1::object::Transfer",
+          "data": {
+            "from": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904",
+            "object": "0x862328a36b194daba2b9fcc5960eb9f26653ffeba6bcdd08d4952595232f73a7",
+            "to": "0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810"
+          }
+        },
+        {
+          "guid": {
+            "creation_number": "1125899906842624",
+            "account_address": "0x862328a36b194daba2b9fcc5960eb9f26653ffeba6bcdd08d4952595232f73a7"
+          },
+          "sequence_number": "0",
+          "type": "0x1::object::TransferEvent",
+          "data": {
+            "from": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904",
+            "object": "0x862328a36b194daba2b9fcc5960eb9f26653ffeba6bcdd08d4952595232f73a7",
+            "to": "0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810"
+          }
+        },
+        {
+          "guid": {
+            "creation_number": "4",
+            "account_address": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904"
+          },
+          "sequence_number": "14",
+          "type": "0xca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904::da_nft_example_1::MintEvent",
+          "data": {
+            "receiver": "0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810",
+            "timestamp": "1750770086",
+            "token_name": "Wood Stork NFT"
+          }
+        },
+        {
+          "guid": {
+            "creation_number": "0",
+            "account_address": "0x0"
+          },
+          "sequence_number": "0",
+          "type": "0x1::transaction_fee::FeeStatement",
+          "data": {
+            "execution_gas_units": "6",
+            "io_gas_units": "9",
+            "storage_fee_quants": "156680",
+            "storage_fee_refund_quants": "0",
+            "total_charge_gas_units": "1581"
+          }
+        }
+      ],
+      "vm_status": "Executed successfully"
+    }
+  },
+  "status": "Success"
+}
+
+

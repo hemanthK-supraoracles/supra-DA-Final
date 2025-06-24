@@ -286,3 +286,4 @@ URL: https://rpc-testnet.supra.com/rpc/v1/transactions/bc4e49d5c9f6f090f1cbf9a54
 
 
 
+supra move tool run --function-id ca1538351b280983182d045df013a4b3895331dbe1eab683a175c0faf92ff904::da_nft_example_1::mint_nft  --args address:0x99fbdf1158bc84b1388866e7bd5c5fd7d15e698d368382b3e3681bec543cb810 string:"Birds Collection Name" string:"Wood Stork NFT" string:"Wood Stork NFT Description" string:"https://cdn.britannica.com/32/152832-050-24DF0338/Wood-stork.jpg"  --profile ggg2
